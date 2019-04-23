@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:LogicPuzzle"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <DataTemplate x:Key="TileTemplate">
+
+        </DataTemplate>
+    </Window.Resources>
+
     <Grid>
-        
+        <ItemsControl ItemTemplate="{StaticResource TileTemplate}"> <!--TODO: Maybe use template selector-->
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
     </Grid>
 </Window>

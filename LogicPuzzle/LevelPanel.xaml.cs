@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace LogicPuzzle
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LevelPanel.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
